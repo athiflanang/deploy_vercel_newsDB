@@ -5,8 +5,7 @@ import EditPage from "../views/EditPage";
 import CategoryPage from "../views/CategoryPage";
 import AddUser from "../views/AddUser";
 import AddNews from "../views/AddNews";
-import EditImage from "../views/EditImage";
-import Login from "../views/Login";
+import Login from "../views/login";
 import Toastify from "toastify-js";
 
 const url = "https://server.athiflanang.site";
@@ -72,10 +71,6 @@ const router = createBrowserRouter([
       {
         path: "/edit/:id",
         element: <EditPage url={url} />,
-      },
-      {
-        path: "/edit/:id",
-        element: <EditImage url={url} />,
       },
       {
         path: "/category",
